@@ -20,7 +20,8 @@ BITA Kernel Crew · Cohort 1 · Sept 2026
     pwd:printing working directorty
     cd:change directory
     cd /bin
-- Problems I hit and how I fixed them:
+    
+- ## Problems I hit and how I fixed them:
 
 **Unable to connect to SSH on Mac**
   Issue: When connecting to SSH server, timed out. Was able to launch cloud ssh on DigitalOcean 
