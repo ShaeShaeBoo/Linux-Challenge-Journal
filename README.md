@@ -27,16 +27,16 @@ BITA Kernel Crew · Cohort 1 · Sept 2026
   Issue: When connecting to SSH server, timed out. Was able to launch cloud ssh on DigitalOcean 
  
  Troubleshoot:
-  checked UFW from DO (sudo ufw status) status active
-  22/tcp wasn't active; to enable 22 (sudo ufw allow 22/tcp)
-  Rule added
-  verify rule: sudo ufw status
+- checked UFW from DO (sudo ufw status) status active
+- 22/tcp wasn't active; to enable 22 (sudo ufw allow 22/tcp)
+- Rule added
+- verify rule: sudo ufw status
   22/tcp    ALLOW    Anywhere
 80/tcp    ALLOW    Anywhere
 22/tcp (v6)  ALLOW    Anywhere (v6)
 80/tcp (v6)  ALLOW    Anywhere (v6)
-connected to 22 successfully; now connection to 167.71.18.230 closed
-run nc -vz 167.71.18.230 22 on DO
+- connected to 22 successfully; now connection to 167.71.18.230 closed
+- run nc -vz 167.71.18.230 22 on DO
 after running ssh shaeshaeboo@167.71.18.230, permission denied (publickey)
 run ls -la ~/.ssh on Mac
 public key id_ed25519, if key exist run cat ~/.ssh/id_ed25519.pub
