@@ -16,7 +16,7 @@ BITA Kernel Crew · Cohort 1 · Sept 2026
   tree /home/:structural
   netstat -i:network connection
   ip addr:ip address 
-  - ## Day 2
+- ## Day 2
     pwd:printing working directorty
     cd:change directory
     cd /bin
