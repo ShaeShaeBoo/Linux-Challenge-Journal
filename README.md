@@ -1,10 +1,11 @@
 # Linux-Challenge-Journal
 # My Linux Upskill Challenge Journal
 BITA Kernel Crew · Cohort 1 · Sept 2026
-## Day 0
+## Day 0-Let's get Started 
 - Set up my server (DigitalOcean / Killercoda) — it's alive 🐧
-- ssh root@167.71.18.230 on MacOs
-## Day 1
+- ssh root@167.71.18.230
+- ssh shaeshaeboo@167.71.18.230 on MacOs
+## Day 1-Get to know Server
 - commands to use:
   whoami:name of server (root)
   sudo apt update:update server
@@ -16,11 +17,32 @@ BITA Kernel Crew · Cohort 1 · Sept 2026
   tree /home/:structural
   netstat -i:network connection
   ip addr:ip address 
-## Day 2
+## Day 2-Basic Navigation 
+    man: manual
+    man cp, man mv, man grep, man ls, man man 
+    apropos: $ apropos "working directory"
     pwd:printing working directorty
+    
     cd:change directory
     cd /bin
-    
+    ls: list
+    ls -ld /mydirectory
+    ~: back to home
+    to create a directory: mkdir
+    cd /var/log
+    pushd and popd: navigate around multiple directories 
+    run: pushd /var/log (keeps track where you were)
+## Day 3-Power Trip
+    Identify admin privileges: 
+    sudo
+    cat /etc/shadow
+    change password (passwd) 
+    hostname (sudo hostnamectl)
+    change timezone (timedatectl)    
+    reboot (sudo reboot)
+    investigate failed root logins (sudo grep /var/log/auth.log)
+## Day 4-Install Software 
+    sudo apt install "software name" 
 ## Problems I hit and how I fixed them:
 
 **Unable to connect to SSH on Mac**
